@@ -1,0 +1,57 @@
+﻿<html>
+<body>
+    <h1 style="font-size:40px;">Sign up</h1>
+    <style type="text/css">
+ 
+            body {font-family:Arial, Sans-Serif;}
+ 
+            #container {width:300px; margin:0 auto;}
+
+            form{
+              margin: 50px;
+              }
+
+ 
+            /* Nicely lines up the labels. */
+            form label {display:block; width:160px;}
+ 
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="username"],
+            form input[type="password"],
+            form input[type="name"],
+	    form input[type="gender"],
+	    form input[type="wiFi"],
+	    form input[type="telephone"],
+	    form input[type="address"],
+	    form input[type="postalcode"],
+	    form input[type="specifications"],
+	    form input[type="file"],{width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:center;}
+ 
+        </style>
+	<form tag="Create">
+		<div align="left">
+			Username *: <input type="username" name="username" /><br />
+			Password *: <input type="password" name="pwd" /><br />
+			Name of the Hostel *: <input type="Name" name="Name" /><br />
+                        Gender *: <input type = "radio" name = "Gender" value = "Female"> Female
+                                  <input type = "radio" name = "Gender" value = "Male"> Male <br />
+                        WiFi *: <input type = "radio" name = "wifi" value = "Yes"> Yes
+                                <input type = "radio" name = "wifi" value = "No"> No <br />
+			Telephone: <input type="telephone" name="tel" /><br />
+			Address *: <input type="address" name="add" /><br />
+			Post Code *: <input type="postcode" name="ptc" /><br />
+                        Any other specifications *: <input type="specifications" name="spec" /><br />
+                        Image *: <input type = "file" name = "fileupload" accept = "image/*" />	<br />	
+
+                        <input type="submit" value="Submit" /> <br />
+<p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>
+		</div>
+	</form>
+
+ 
+
+</body>
+</html>
